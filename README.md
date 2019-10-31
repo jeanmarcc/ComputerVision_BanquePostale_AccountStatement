@@ -7,6 +7,9 @@ BanquePostale_AccountStatement
 
 Python script to download Bank account statements automatically from labanquepostale.fr with a firefox instance in Headless mode (script running in background) or in foreground (script opens a firefox window on the platform)
 
+This script uses OpenCV librairy to detect which image buttons to click on the virtual keyboard displayed in the html Login page according to 
+password
+
 ## Input JSON file
 All the input parameters (bank account number, password...) are extracted from a JSON file "BanquePostale_Account.json" that must be present in the directory the script is launched
 
