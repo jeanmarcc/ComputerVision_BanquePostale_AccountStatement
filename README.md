@@ -5,10 +5,14 @@ BanquePostale_AccountStatement
 
 __For test pupose only__
 
-Python script to download Bank account statements automatically from labanquepostale.fr with a firefox instance in Headless mode (script running in background) or in foreground (script opens a firefox window on the platform)
+![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
 
-This script uses OpenCV librairy to detect which image buttons to click on the virtual keyboard displayed in the html Login page according to 
+Python script which connects to https://www.labanquepostale.fr/ automatically in order to download bank account statements. 
+
+This uses OpenCV library to detect which image buttons ahev to be clicked on in the virtual keyboard displayed in Login page according to 
 password
+
+This script can be run in foreground (param_HEADLESS_PROCESS = 'False') or in background on a server (param_HEADLESS_PROCESS = 'True')
 
 ## Input JSON file
 All the input parameters (bank account number, password...) are extracted from a JSON file "BanquePostale_Account.json" that must be set in the directory the script is launched
@@ -20,7 +24,7 @@ All the input parameters (bank account number, password...) are extracted from a
 5- param_HEADLESS_PROCESS: 'True' when we want the script to run a firefox instance in a background else 'False' for the foreground process
 
 ## Output PDF file
-At the end od the script, the bank account statement file PDF is downloaded to the specified directory
+At the end od the script, the bank account statement file format PDF is downloaded to the specified directory (local machine or remote server)
 
 ## Authors
 
