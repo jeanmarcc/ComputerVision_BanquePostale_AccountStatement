@@ -3,7 +3,7 @@ BanquePostale_AccountStatement
 
 ## Getting Started
 
-__For test only__
+__For test pupose only__
 
 Python script to download Bank account statements automatically from labanquepostale.fr with a firefox instance in Headless mode (script running in background) or in foreground (script opens a firefox window on the platform)
 
