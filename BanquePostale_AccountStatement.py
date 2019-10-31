@@ -8,7 +8,7 @@
 #__version__ = "1.0.0"
 #__maintainer__ = ""
 #__email__ = ""
-#__status__ = "test only"
+#__status__ = "For test pupose only!"
 ################################################################################
 # Requirements:
 #  Firefox installed in environment
