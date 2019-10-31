@@ -1,35 +1,24 @@
-
-#Project Title
+# Project Title
 BanquePostale_AccountStatement
 
-##Getting Started
+## Getting Started
 
-Python script to download Bank account statements from french bank with a firefox instance (headless or live mode)
+*For test only*
 
-##Hardware:
+Python script to download Bank account statements automatically from labanquepostale.fr with a firefox instance in Headless mode (script running in background) or in foreground (script opens a firefox window on the platform)
 
-    nRF5x series (nRF52832)
-    LIS2DH serie (eg LIS2DHTR)
+## Input JSON file
+All the input parameters (bank account number, password...) are extracted from a JSON file "BanquePostale_Account.json" that must be present in the directory the script is launched
 
-##Pinout:
+1-> param_NumeroDeCompte: Bank account 11 char (eg '123456789X0')
+2-> param_ID: id to connect to internet site, 6 digits
+3-> param_PWD: password to connect to internet site, 6 digits
+4-> param_DownloadFolder: local download directory where the pdf bank account statements are downloaded
+5-> param_HEADLESS_PROCESS: 'True' when we want the script to get a firefox instance in a background process else 'False' for the foreground process
 
-    LIS2DHTR-SCL --> nRF52832-P0.10
-    LIS2DHTR-SCA --> nRF52832-P0.09
-    LIS2DHTR-ACC-INT1 --> nRF52832-P0.05
-    LIS2DHTR-ACC-INT2 --> nRF52832-P0.06
+## Output PDF file
+At the end od the script, the bank account statement file PDF is downloaded to the specified directory
 
-##Installing
-
-    for a quick demo, put this sketch in nRF5_SDK_15.0.0_a53641a\examples\peripheral[Your_Project]
-
-##Main Functionality
-
-##This firmware uses:
-
-    INT1 PIN to wake up the MCU
-    INT2 PIN to force sleep mode (after a defined duration)
-
-
-##Authors
+## Authors
 
 https://github.com/johnmarcc
