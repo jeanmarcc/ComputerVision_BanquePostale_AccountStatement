@@ -7,7 +7,7 @@ __For test pupose only__
 
 ![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
 
-Python script which connects to https://www.labanquepostale.fr/ automatically in order to download bank account statements. 
+Python script which connects automatically to https://www.labanquepostale.fr/  in order to download the most recent bank account statement. 
 
 This uses OpenCV library to detect which buttons have to be clicked on the virtual keyboard displayed in the Login page according to 
 user's password
