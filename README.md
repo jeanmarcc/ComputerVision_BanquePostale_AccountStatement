@@ -1,15 +1,19 @@
 # Project Title
 BanquePostale_AccountStatement
 
+# Project Description
+The aim is to download the most recent bank account statement from https://www.labanquepostale.fr/ as a PDF file to
+a custom directory (local or server)
+
 ## Getting Started
 
-__This script is for test pupose only__
+__This script is for test purpose only__
 
 ![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
 
-Python script which connects automatically to https://www.labanquepostale.fr/  in order to download the most recent bank account statement. 
+Python script which connects automatically to https://www.labanquepostale.fr/ in order to download the most recent bank account statement.
 
-This uses OpenCV library to detect which buttons have to be clicked on the virtual keyboard displayed in the Login page according to 
+This uses OpenCV library to detect which buttons have to be clicked on the virtual keyboard displayed in the Login page according to
 user's password
 
 This script can be run in foreground (param_HEADLESS_PROCESS = 'False') or in background on a server (param_HEADLESS_PROCESS = 'True')
@@ -24,7 +28,7 @@ All the input parameters (bank account number, password...) are extracted from a
 5- param_HEADLESS_PROCESS: 'True' when we want the script to run a firefox instance in a background else 'False' for the foreground process
 
 ## Output PDF file
-At the end of the script, the bank account statement file format PDF is downloaded to the specified directory (local machine or remote server)
+When the script completes successfully, the bank account statement file format PDF is downloaded to the specified directory (local machine or remote server)
 
 ## Authors
 
