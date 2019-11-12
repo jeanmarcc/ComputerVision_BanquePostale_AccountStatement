@@ -5,9 +5,7 @@ BanquePostale_AccountStatement
 The aim is to download the most recent bank account statement from https://www.labanquepostale.fr/ as a PDF file to
 a custom directory (local or server)
 
-##########################################
 ## This script is for test purpose only ##
-##########################################
 
 ## Getting Started
 
