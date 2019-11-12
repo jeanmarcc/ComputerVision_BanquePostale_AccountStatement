@@ -9,6 +9,7 @@ a custom directory (local or server)
 
 ## Getting Started
 
+Example of virtual keyboard from https://www.labanquepostale.fr/ to type the password:
 ![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
 
 Python script which connects automatically to https://www.labanquepostale.fr/ in order to download the most recent bank account statement.
