@@ -3,7 +3,7 @@ BanquePostale_AccountStatement
 
 ## Getting Started
 
-__For test pupose only__
+__This script is for test pupose only__
 
 ![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
 
