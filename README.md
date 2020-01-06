@@ -10,7 +10,7 @@ a custom directory (local or server)
 ## Getting Started
 
 Example of virtual keyboard from https://www.labanquepostale.fr/:                         
-![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
+![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/v2.ezgif.com-crop.gif)
 
 This Python script uses OpenCV library to detect which buttons have to be clicked on the virtual keyboard according to
 user's password
