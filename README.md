@@ -1,7 +1,7 @@
 # Project Title
-BanquePostale_AccountStatement
+Computer Vision | BanquePostale_AccountStatement
 
-# Project Description
+## Project Description
 The aim is to download the most recent bank account statement from https://www.labanquepostale.fr/ as a PDF file to
 a custom directory (local or server)
 
@@ -10,7 +10,7 @@ a custom directory (local or server)
 ## Getting Started
 
 Example of virtual keyboard from https://www.labanquepostale.fr/:                         
-![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.jpg)
+![](https://github.com/johnmarcc/OpenCV_BanquePostale_AccountStatement/blob/master/BanquePostaleVirtualKeyboard.gif)
 
 This Python script uses OpenCV library to detect which buttons have to be clicked on the virtual keyboard according to
 user's password
