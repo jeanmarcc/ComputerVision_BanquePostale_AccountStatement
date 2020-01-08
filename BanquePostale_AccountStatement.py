@@ -8,7 +8,7 @@
 #__version__ = "1.0.0"
 #__maintainer__ = ""
 #__email__ = ""
-#__status__ = "For test pupose only!"
+#__status__ = "For test pupose only"
 ################################################################################
 # Requirements:
 #  Firefox installed in environment
@@ -32,7 +32,9 @@ import time
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
-from skimage.measure import compare_ssim #for compare_ssim
+# from skimage.measure import compare_ssim #for compare_ssim
+# from skimage import measure #new version of compare_ssim
+from skimage.metrics import structural_similarity as ssim
 from PIL import Image
 import io
 import cv2 #image matching
@@ -67,7 +69,7 @@ print("Parameters extracted from input file: ",param_NumeroDeCompte,    \
 try:
     options = Options()
 
-    if (param_HEADLESS_PROCESS):
+    if (param_HEADLESS_PROCESS == "True"):
         options.add_argument("--headless")
 
     options.set_preference("browser.download.folderList", 2)
@@ -75,7 +77,7 @@ try:
     options.set_preference("browser.download.useDownloadDir", True)
     options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/pdf")
     options.set_preference("pdfjs.disabled", True)  # disable the built-in PDF viewer
-    driver = webdriver.Firefox(firefox_options=options)
+    driver = webdriver.Firefox(options=options)
     driver.get("https://voscomptesenligne.labanquepostale.fr/wsost/OstBrokerWeb/loginform?TAM_OP=login&ERROR_CODE=0x00000000&URL=%2Fvoscomptes%2FcanalXHTML%2Fidentif.ea%3Forigin%3Dparticuliers")
 
 except Exception as e:
@@ -102,7 +104,7 @@ for lineNum in range(16):
 for element in range(len(listPWD)):
 
     # load Reference image for the current password digit
-    if (param_HEADLESS_PROCESS):
+    if (param_HEADLESS_PROCESS == "True"):
         referenceDIR = 'REF_HEADLESS'
     else:
         referenceDIR = 'REF_LIVE_MODE'
@@ -123,9 +125,9 @@ for element in range(len(listPWD)):
 
         # compute the Structural Similarity Index (SSIM) between the two
         # images, ensuring that the difference image is returned
-        (score, diff) = compare_ssim(gray_referenceIMG, gray_localIMG, full=True)
+        s = ssim(gray_referenceIMG,gray_localIMG)
 
-        if (score > 0.98):
+        if (s > 0.98):
             # print("SCORE=",score," LOCAL=",localImage,"REFERENCE=",referenceImage)
             dictPWD[listPWD[element]]=localImage
             break  #once we find the good match then skip to next pwd digit to search
