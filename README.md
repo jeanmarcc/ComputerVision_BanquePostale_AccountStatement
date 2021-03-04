@@ -5,7 +5,7 @@ Computer Vision | BanquePostale_AccountStatement
 The aim of this process is to automate the download of the most recent bank account statement from https://www.labanquepostale.fr/ as a PDF file to
 a custom directory (local or server). This process could be scheduled every month and executed as a server script.
 
-## This script is for test purpose only! ##
+## This script is for experiment only! ##
 
 ## Getting Started
 
