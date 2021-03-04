@@ -2,8 +2,10 @@
 Computer Vision | BanquePostale_AccountStatement
 
 ## Project Description
-This process automatically downloads the most recent bank account statement from https://www.labanquepostale.fr/ as a PDF file to
-a custom directory (local or server). This process could be scheduled every month and executed as a server script.
+This process automatically downloads the most recent bank account statement from https://www.labanquepostale.fr/.
+It auto connects with the user/password of the bank's customer. 
+The statment is downloaded as a PDF file to a custom directory (local or server). 
+This process could be scheduled every month and executed as a server script.
 
 ## This script is for experiment only! ##
 
