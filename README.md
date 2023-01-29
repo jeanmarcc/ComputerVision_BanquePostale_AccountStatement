@@ -33,4 +33,4 @@ When the script completes successfully, the bank account statement file format P
 
 ## Authors
 
-https://github.com/johnmarcc
+https://github.com/jeanmarcc
